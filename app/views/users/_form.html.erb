@@ -1,0 +1,38 @@
+<%= form_with(model: @user, local: true) do |f| %>
+<div class="field">
+<%= f.label :name %>
+<%= f.text_field :name %>
+</div>
+
+<div class="field">
+<%= f.label :height %>
+<%= f.text_field :height %>
+</div>
+
+<div class="field">
+<%= f.label :happiness %>
+<%= f.text_field :happiness %>
+</div>
+
+<div class="field">
+<%= f.label :nausea %>
+<%= f.text_field :nausea %>
+</div>
+
+<div class="field">
+<%= f.label :tickets %>
+<%= f.text_field :tickets %>
+</div>
+
+<div class="field">
+<%= f.label :password %>
+<%= f.password_field :password %>
+</div>
+
+<div class="field">
+<%= f.label :admin %>
+<%= f.check_box :admin, id: "user_admin" %>
+</div>
+
+<%= f.submit %>
+<% end %>
